@@ -8,6 +8,8 @@ package dk.easv.bll.bot;
 
 import dk.easv.bll.game.IGameState;
 import dk.easv.bll.move.IMove;
+import java.util.List;
+import java.util.Random;
 
 /**
  *
@@ -21,7 +23,9 @@ public class MMEFBot implements IBot
     @Override
     public IMove doMove(IGameState state)
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+           Random r = new Random();
+        List<IMove> validMoves = state.getField().getAvailableMoves();
+        return validMoves.get(r.nextInt(validMoves.size()));
     }
 
     @Override
