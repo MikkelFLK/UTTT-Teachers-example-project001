@@ -3,5 +3,6 @@ Fungus foot
 Local Prio ListBot
 Lord Bagel Muncher
 MMEF
+MMEFPrioBot
 Random Dude
-Sespågrillen
+Test1
