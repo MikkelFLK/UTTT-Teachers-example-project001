@@ -12,6 +12,7 @@ import dk.easv.bll.move.IMove;
 import java.util.List;
 import java.util.Random;
 
+
 /**
  *
  * @author MikkelK
