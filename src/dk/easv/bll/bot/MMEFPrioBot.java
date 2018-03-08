@@ -41,6 +41,7 @@ public class MMEFPrioBot implements IBot
                 return choosenMove;
             }
 
+            //Find macroboard to play in
             for (int[] move : preferredMoves)
             {
                 if (state.getField().getMacroboard()[move[0]][move[1]].equals(IField.AVAILABLE_FIELD))
@@ -60,11 +61,7 @@ public class MMEFPrioBot implements IBot
             //undo
             state.getField().getBoard()[choosenMove.getX()][choosenMove.getY()] = IField.EMPTY_FIELD;
         }
-        
-        //Find macroboard to play in
-        
 
-        
         return validMoves.get(r.nextInt(validMoves.size()));
     }
 
